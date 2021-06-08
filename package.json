@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "hyperswarm": "^2.15.3"
+    "blake2s": "^1.1.0",
+    "end-of-stream": "^1.4.4",
+    "hyperswarm": "^2.15.3",
+    "main-loop": "^3.4.0",
+    "randombytes": "^2.1.0",
+    "signalhub": "^4.9.0",
+    "split2": "^0.1.2",
+    "through2": "^0.6.5",
+    "virtual-dom": "^2.1.1",
+    "webrtc-swarm": "^2.9.0"
   }
 }
