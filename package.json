@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hyperswarm": "^2.15.3"
+  }
+}
