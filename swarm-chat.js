@@ -28,7 +28,9 @@ swarm.on('peer', function (stream, id) {
       var parts = line.toString().split(',')
       var msg = parts.slice(1).join(',')
       var msgid = parts[0]
+
       if (addMsg(msgid, msg) === false) return next()
+
       Object.keys(streams).forEach(function (sid) {
         if (sid === id) return
         streams[id].write(line + '\n')
@@ -46,6 +48,7 @@ function render (state) {
       h('input', { type: 'text', name: 'msg' })
     ])
   ])
+
   function chat (ev) {
     ev.preventDefault()
     var msg = this.elements.msg.value
